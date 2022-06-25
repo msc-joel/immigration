@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src='https://api.mapbox.com/mapbox-gl-js/v2.8.2/mapbox-gl.js'></script>
+    <link href='https://api.mapbox.com/mapbox-gl-js/v2.8.2/mapbox-gl.css' rel='stylesheet' />
+    <!-- <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma@0.9.3/css/bulma.min.css"> -->
+    <link rel="stylesheet" href="styles.css">
+    <script src="https://api.mapbox.com/mapbox-gl-js/v2.8.2/mapbox-gl.js"></script>
+    <link href="https://api.mapbox.com/mapbox-gl-js/v2.8.2/mapbox-gl.css" rel="stylesheet" />
+</head>
+
+<style>
+    /* * {
+      box-sizing: border-box;
+    } */
+    
+    body {
+      font-family: Arial, Helvetica, sans-serif;
+    }
+    body {
+      padding-top: 50px;
+      padding-right: 140px;
+      padding-bottom: 50px;
+      padding-left: 140px;
+    }
+</style>
+
+<body>
+    <div class="header">
+        <h1>For years, US has been home for sportsmen and women</h1>
+
+    <hr>    
+
+    <div class="section">
+        <p><em>By Joel Konopo</em></p>
+        <p><em>June 20, 2022</em></p>
+        <br>
+    <p>
+        Athletes nationally or even internationally recognized for their sporting achievements are 
+    mostly eligible for a non-immigrant US visa called O-1 visa. This visa has an initial limit of 3 years and can 
+    be renewed for another 1 year. Over the years, professionals have been relocating to the US taking 
+    advantage of advanced training and signing opportunities. This has led to an increase in the 
+    number of profesisonal atheletes relocating to the US. Data shows that athlets from countries such
+    as Mexico and Germany have enjoyed greater opportunities in the US with their spouses qualifying
+    for an O-3 visa, to also remain in the USA for a specified time. </p>
+
+    <div id="map"></div>
+    <script type="text/javascript" src="map.js"></script>
+
+    <div id="map">
+        <div id="legend">
+            <h4>Athletes migration to the US</h4>
+            <div><span style="background-color: #4287f5"></span>0 - 1530</div>
+            <div><span style="background-color: #14e09c"></span>1531 - 3200</div>
+            <div><span style="background-color: #86f0cd"></span>3201 - 62000</div>
+            <div><span style="background-color: #5d6b67"></span>6201 - 10000</div>
+            <div><span style="background-color: #474d4b"></span>10001 - 15000</div>
+            <div><span style="background-color: #0bd994"></span>15001 - 18000</div>
+            <div><span style="background-color: #163b2e"></span>18001 - 21825</div>
+            <div><span style="background-color: #ffffff"></span>More than 22000</div>
+        </div>
+    </div>
+</div>
+</body>
+</html>
+
