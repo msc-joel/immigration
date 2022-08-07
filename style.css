@@ -1,0 +1,220 @@
+@@ -43,4 +43,81 @@ a:hover {
+}
+a.no-underline {
+    text-decoration: none;
+} 
+body {
+    margin: 0;
+    padding: 0;
+    font-family: Arial, Helvetica, sans-serif ;
+}
+
+.container {
+    position: relative;
+  }
+
+
+#vis {
+    width: 90%;
+    height: 600px;
+    margin: 5em auto;
+}
+#g-aiImg> {
+    width: 90%;
+    height: 600px;
+    margin: 5em auto;
+}
+
+
+.methodology {
+    font-family: 'Mariweather', Arial, Helvetica, sans-serif ;
+    font-size: 12px;
+    max-width: 50rem;
+    margin: 2rem auto; vertical margin and horizontal margin
+    text-align: center ;
+    border-top: solid 0px;
+    border-color: hsl(0, 0%, 50%);
+} 
+    
+.header {
+    max-width: 50rem;
+    font-family: 'Mariweather, Arial, Helvetica, sans-serif ;
+}
+h1 {
+    text-align: center;
+    font-family: 'Mariweather', Arial, Helvetica, sans-serif ;
+}
+
+h2 {
+    text-align: center;
+    font-family: 'Mariweather', Arial, Helvetica, sans-serif ;
+}
+
+h3 {
+    text-align: center;
+    /* font-family: 'Meriweather' ; */
+    font-family: 'Mariweather', Arial, Helvetica, sans-serif ;
+}
+
+h4 {
+
+    font: 12px Arial, Helvetica, sans-serif;
+    
+    margin-bottom: 0px;
+    
+    }
+
+    p {
+        font-family: 'Mariweather', Arial, Helvetica, sans-serif ;
+        line-height: 1.75em;
+        margin: 0;
+        padding: 0;
+    }
+
+.section {
+    max-width: 50rem;
+    margin: auto;
+}
+.footer {
+    max-width: 50rem;
+    margin: 2rem auto; vertical margin and horizontal margin
+    text-align:;
+    border-top: solid 1px;
+    border-color: hsl(0, 0%, 50%);
+}
+img {
+    max-width: 50rem;
+}
+
+
+.footer p {
+    font-size: small;
+    font-family: 'Mariweather', Arial, Helvetica, sans-serif ;
+}
+a, a:visited {
+    text-decoration: underline;
+    text-underline-offset: 3px;
+    color: black;
+}
+a:hover {
+    color: hsla(0, 0%, 0%, 0.5);
+}
+a.no-underline {
+    text-decoration: none;
+}
+
+em {
+    margin-left: auto;
+    margin-top: 2px;
+    padding-left: 60px;
+    padding-right: 20px;
+    font-family: 'Mariweather', Arial, Helvetica, sans-serif ;
+    text-align: justify;
+    font-size: 9pt;
+}
+
+     
+hr {
+    height: 1px;
+    background-color: gray;
+    border: none;
+}
+
+
+q {
+    quotes: "“" "”";
+    font-size: 2rem;
+}
+
+#scrolly {
+    position: relative;
+    padding: 1rem;
+  }
+
+  .scrolly-overlay {
+    position: relative;
+    padding: 0;
+    max-width: 35rem;
+    margin: 0 auto;
+  }
+
+  .sticky-thing {
+    position: -webkit-sticky;
+    position: sticky;
+    left: 0;
+    width: 100%;
+    margin: 0;
+    z-index: 0;
+    top: 0;
+    height: 100vh;
+    /* Center everything inside */
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    justify-content: center;
+  }
+
+  .step {
+    margin: 0 auto 2rem auto;
+    margin-bottom: 25rem;
+    background-color: #fff;
+    background-color: #fff;
+    color: black;
+  }
+
+  .step p {
+    text-align: center;
+    padding: 1rem;
+    font-size: 1rem;
+  }
+
+  .hidden { visibility: hidden; }
+
+  /* When it's less than 700 pixels wide, do normal scrollytelling */
+  @media only screen and (min-width: 700px) {
+    #scrolly.side-by-side {
+      display: flex;
+    }
+
+    #scrolly.side-by-side > div {
+      flex-basis: 0;
+      flex-grow: 1;
+      flex-shrink: 1;
+      padding: 0.75em;
+    }
+
+    #scrolly.side-by-side .scrolly-overlay {
+      margin-top: 70vh;
+      order: 0;
+      /* Change these to adjust sizing options */
+      min-width: 15rem;
+      max-width: 20rem;
+    }
+
+    #scrolly.side-by-side .sticky-thing {
+      order: 1;
+      flex-grow: 2;
+    }
+  }
+
+#g-text-laptop,  #g-text-medium, #g-text-mobile {
+    display: none;
+}
+
+@medium (max-width; 490px) {
+    #g-text-mobile {
+        display: block;
+    }
+}
+
+@medium (min-width; 490px)and max-width: 620px {
+    #g-text-laptop {
+        display: block;
+    }
+}
+
+@medium (min-width; 620px) {
+    #g-text-medium {
+        display: block;
+    }
+}
